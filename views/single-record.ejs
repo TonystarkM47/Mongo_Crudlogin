@@ -1,0 +1,26 @@
+<table border="2">
+    <tbody>
+        <%- include('header'); -%>
+        <h3>Single-Record</h3>
+        <tr>
+            <td>Name</td>
+            <td>:</td>
+            <td><%= user_array.user_name %></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>:</td>
+            <td><%= user_array.user_gender %></td>
+        </tr>
+        <tr>
+            <td>E_Mail</td>
+            <td>:</td>
+            <td><%= user_array.user_email %></td>
+        </tr>
+        <tr>
+            <td>IMG</td>
+            <td>:</td>
+            <td><img src="/Upload/<%=user_array.user_image %>" width="100"></td>
+        </tr>
+    </tbody>
+</table>

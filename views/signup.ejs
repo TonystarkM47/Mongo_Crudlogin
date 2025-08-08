@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <%- include('header'); -%>
+        <h1>Sign-up Page</h1>
+        <form method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>Name:- </td>
+                    <td><input type="text" name="txt1" required></td>
+                </tr>
+                <tr>
+                    <td>DOB:- </td>
+                    <td><input type="date" name="txt2"></td>
+                </tr>
+                <tr>
+                    <td>Gender:- </td>
+                    <td><input type="radio" value="Male" name="txt3">Male
+                        <input type="radio" value="Female" name="txt3">Female</td>
+                </tr>
+                <tr>
+                    <td>Mobile:- </td>
+                    <td><input type="tel" name="txt4" required></td>
+                </tr>
+                <tr>
+                    <td>E_Mail:- </td>
+                    <td><input type="email" name="txt5" required></td>
+                </tr>
+                <tr>
+                    <td>Password:- </td>
+                    <td><input type="password" name="txt6" required></td>
+                </tr>
+                <tr>
+                    <td>Are you Admin:- </td>
+                    <td><select name="txt7">
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Img:- </td>
+                    <td><input type="file" name="Upload"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
